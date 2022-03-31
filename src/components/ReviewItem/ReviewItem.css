@@ -27,6 +27,22 @@
     align-items: center;
 }
 
-.delete-btn-container{
-
+.delete-btn-container button{
+    border: none;
+    padding: 0;
+    background-color: white;
+}
+.delete-icon{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    color: rgb(235, 80, 80);
+    border: none;
+    padding: 8px;
+    font-size: 1.2rem;
+    background-color: rgb(233, 196, 196);
+    border-radius: 50%;
+}
+.delete-icon:hover {
+    color: red;
 }
