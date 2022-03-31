@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import useProducts from '../../Hooks/useProducts';
 import { addToDb, getStoredCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
@@ -11,7 +12,7 @@ const Shop = () => {
     // useProducts is a custom hook , using this custom hook instade of commented line code
     const [products, setProducts] = useProducts();
 
-    
+
     const [cart, setCart] = useState([]);
 
     // useEffect( () =>{
@@ -64,7 +65,11 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart}>
+                <Link to='/orders'>
+                        <button>Review Order</button>
+                </Link>
+                </Cart>
             </div>
         </div>
     );
