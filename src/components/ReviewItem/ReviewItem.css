@@ -1,0 +1,32 @@
+.review-item{
+    border: 2px solid darkcyan;
+    margin: 10px auto;
+    max-width: 500px;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.review-item h4 {
+    font-weight: normal;
+    margin: 0;
+}
+
+.review-item-img-container img {
+    width: 50px;
+    border-radius: 8px;
+    margin-right: 3px;
+}
+
+
+.review-item-details-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn-container{
+
+}
